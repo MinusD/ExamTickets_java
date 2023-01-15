@@ -4,7 +4,6 @@ package ru.minusd.ticket07;
  * LinkedIntList - класс, который представляет собой односвязный список целых чисел.
  * Класс содержит внутренний класс ListNode, который представляет собой узел списка.
  * Написать метод removeAll, который удаляет из списка все элементы, которые содержаться в другом списке.
- *
  */
 
 public class LinkedIntList {
@@ -47,7 +46,7 @@ public class LinkedIntList {
         return false;
     }
 
-public void remove(int value) {
+    public void remove(int value) {
         if (front == null) {
             return;
         }
