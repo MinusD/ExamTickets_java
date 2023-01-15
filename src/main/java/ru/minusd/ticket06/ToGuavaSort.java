@@ -19,7 +19,6 @@ public class ToGuavaSort {
 
         // Тестирование функции
         System.out.println(Arrays.toString(guavaSort(arr)));
-        System.out.println(Arrays.toString(guavaSort2(arr)));
 
     }
 
@@ -44,29 +43,6 @@ public class ToGuavaSort {
                 sortedArr[i] = s;
                 i++;
             }
-        }
-
-        return sortedArr;
-    }
-    /**
-     * Метод guavaSort принимает на вход список строк и возвращает отсортированный список строк в порядке возрастания.
-     */
-    public static String[] guavaSort2(String[] arr) {
-        TreeMap<String, Integer> stringCountMap = new TreeMap<String, Integer>(); // Создаём TreeMap для подсчёта вхождений строк
-        for (String s : arr) { // Проходим по массиву строк
-            if (stringCountMap.containsKey(s)) { // Если строка уже есть в TreeMap, то увеличиваем счётчик на 1
-                stringCountMap.put(s, stringCountMap.get(s) + 1);
-            } else {
-                stringCountMap.put(s, 1); // Если нет, то добавляем строку в TreeMap и устанавливаем счётчик в 1
-            }
-        }
-
-        TreeSet<String> sortedSet = new TreeSet<String>(stringCountMap.keySet()); // Создаём TreeSet из ключей TreeMap
-        String[] sortedArr = new String[sortedSet.size()]; // Создаём массив для отсортированных строк
-        int i = 0;
-        for (String a : sortedSet) { // Проходим по TreeSet
-            sortedArr[i] = a + " x" + stringCountMap.get(a); // Добавляем в массив строку и количество её вхождений
-            i++;
         }
 
         return sortedArr;
