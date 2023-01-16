@@ -8,6 +8,13 @@
 | [Билет 21](./src/main/java/ru/minusd/ticket21)  | [Билет 22](./src/main/java/ru/minusd/ticket22)  | [Билет 23](./src/main/java/ru/minusd/ticket23)  | [Билет 24](./src/main/java/ru/minusd/ticket24)  | [Билет 25](./src/main/java/ru/minusd/ticket25)  |
 | [Билет 26](./src/main/java/ru/minusd/ticket26)  | [Билет 27](./src/main/java/ru/minusd/ticket27)  | [Билет 28*](./src/main/java/ru/minusd/ticket28) | [Билет 29](./src/main/java/ru/minusd/ticket29)  | [Билет 30*](./src/main/java/ru/minusd/ticket30) |
 
+* **[Билет 0x](./src/main/java/ru/minusd/ticket0x)**
+    * ... конструктор родительского класса, порядок инициализации экземпляра Java класса.
+    * Использование языка UML для проектирования и документации объектно-ориентированных программ. Основные UML
+      диаграммы для оборажения отношений между классами в ООП программах.
+    * [Задача](./src/main/java/ru/minusd/ticket0x/LinkedIntList.java) Напишите метод firstLast, который можно добавить в
+      класс LinkedIntList, который перемещает первый элемент спика в конец.
+
 * **[Билет 01](./src/main/java/ru/minusd/ticket01/theory.txt)**
     * Парадигма ООП. Основные принципы ООП и их реализация в Java & C++
     * Пронятие структуры данных список. Линейный список. Виды списков и их реализация на Java. Доступ к элементу
@@ -114,4 +121,5 @@
       Необходимо использовать дженерики.
 
 ## Картинки
+
 ![](./diff/Collections.png)
