@@ -50,7 +50,7 @@
     * Возможности Java Framework Collections. Контейнер HashMap и его основные методы.
     * [Задача](./src/main/java/ru/minusd/ticket15/SplitStack.java) Напишите метод splitStack, который принимает стек
       целых чисел в качестве параметра и возращает стек, где все отрицательные числа в нижней части стека.
-* **[Билет 16](./src/main/java/ru/minusd/ticket16)**
+* **[Билет 16](./src/main/java/ru/minusd/ticket16/theory.txt)**
     * Работа со строками в Java, строковый хэш. Операция контакенации строк.
     * Возможности Java Framework Collections. Контейнер HashSet и его основные методы.
     * [Задача](./src/main/java/ru/minusd/ticket16/StackCopier.java) Напишите метод copyStack, который принимает стек
