@@ -7,13 +7,15 @@ public class MergeArrays {
     public static ArrayList<Integer> alternate(ArrayList<Integer> a, ArrayList<Integer> b) {
         ArrayList<Integer> result = new ArrayList<>();
         int size = a.size() + b.size();
+        int j = 0;
         for (int i = 0; i < size; i++) {
-            if (!a.isEmpty()) {
-                result.add(a.remove(0));
+            if (j < a.size()) {
+                result.add(a.get(j));
             }
-            if (!b.isEmpty()) {
-                result.add(b.remove(0));
+            if (j < b.size()) {
+                result.add(b.get(j));
             }
+            j++;
         }
         return result;
     }
