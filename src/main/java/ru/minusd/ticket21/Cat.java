@@ -1,8 +1,10 @@
 package ru.minusd.ticket21;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Objects;
 
-public class Cat implements Searchable {
+public class Cat implements Comparable<Cat> {
 
     private final String name;
 
@@ -11,10 +13,7 @@ public class Cat implements Searchable {
     }
 
     @Override
-    public boolean equalTo(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Cat)) return false;
-        Cat cat = (Cat) o;
-        return Objects.equals(name, cat.name);
+    public int compareTo(@NotNull Cat o) {
+        return name.compareTo(o.name);
     }
 }

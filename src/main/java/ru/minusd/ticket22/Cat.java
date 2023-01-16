@@ -1,6 +1,8 @@
 package ru.minusd.ticket22;
 
-public class Cat implements Sortable<Cat> {
+import org.jetbrains.annotations.NotNull;
+
+public class Cat implements Comparable<Cat> {
     private String name;
     private int age;
 
@@ -30,15 +32,15 @@ public class Cat implements Sortable<Cat> {
     }
 
     @Override
-    public int equalTo(Cat cat) {
-        return Integer.compare(this.age, cat.age);
-    }
-
-    @Override
     public String toString() {
         return "Cat{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    @Override
+    public int compareTo(@NotNull Cat o) {
+        return name.compareTo(o.name);
     }
 }
