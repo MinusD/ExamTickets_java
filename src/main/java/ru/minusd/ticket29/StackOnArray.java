@@ -1,5 +1,7 @@
 package ru.minusd.ticket29;
 
+import java.util.LinkedList;
+
 public class StackOnArray<T> {
     private Object[] array; // Массив для хранения элементов
     private int size; // Количество элементов в стеке
