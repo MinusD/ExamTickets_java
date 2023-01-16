@@ -16,9 +16,7 @@ public class LongestSortedSequence {
             if (elementData[i] > elementData[i - 1]) { // Если текущий элемент больше предыдущего
                 current++; // Увеличиваем текущую длину последовательности
             } else {
-                if (current > max) { // Если текущая длина больше максимальной
-                    max = current; // Запоминаем ее как максимальную
-                }
+                max = Math.max(max, current); // Сохраняем максимальную длину последовательности
                 current = 1;
             }
         }
