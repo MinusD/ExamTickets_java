@@ -4,6 +4,7 @@ package ru.minusd.ticket07;
  * LinkedIntList - класс, который представляет собой односвязный список целых чисел.
  * Класс содержит внутренний класс ListNode, который представляет собой узел списка.
  * Написать метод removeAll, который удаляет из списка все элементы, которые содержаться в другом списке.
+ * Методо должен эффетикто удалять за время lon N, где N - количество элементов в списке.
  */
 
 public class LinkedIntList {
@@ -27,42 +28,27 @@ public class LinkedIntList {
 
     public void removeAll(LinkedIntList list) {
         ListNode current = front;
-        while (current != null) {
-            if (list.contains(current.data)) {
-                remove(current.data);
+        ListNode prev = null;
+        ListNode current2 = list.front;
+
+        while (current != null && current2 != null) {
+            if (current.data == current2.data) {
+                if (prev == null) {
+                    front = current.next;
+                } else {
+                    prev.next = current.next;
+                }
+                current = current.next;
+                current2 = current2.next;
+            } else if (current.data < current2.data) {
+                current = current.next;
+                prev = current;
+            } else {
+                current2 = current2.next;
             }
-            current = current.next;
         }
     }
 
-    public boolean contains(int value) {
-        ListNode current = front;
-        while (current != null) {
-            if (current.data == value) {
-                return true;
-            }
-            current = current.next;
-        }
-        return false;
-    }
-
-    public void remove(int value) {
-        if (front == null) {
-            return;
-        }
-        if (front.data == value) {
-            front = front.next;
-            return;
-        }
-        ListNode current = front;
-        while (current.next != null) {
-            if (current.next.data == value) {
-                current.next = current.next.next;
-                return;
-            }
-            current = current.next;
-        }
-    }
 
     public static class ListNode {
         public int data;
@@ -71,6 +57,15 @@ public class LinkedIntList {
         public ListNode(int data) {
             this.data = data;
         }
+    }
+
+    public void print() {
+        ListNode current = front;
+        while (current != null) {
+            System.out.print(current.data + " ");
+            current = current.next;
+        }
+        System.out.println();
     }
 
     public static void main(String[] args) {
@@ -90,18 +85,10 @@ public class LinkedIntList {
         list2.add(5);
 
 
+        list1.print();
+        list2.print();
         list1.removeAll(list2);
-
-        ListNode current = list1.front;
-        while (current != null) {
-            System.out.print(current.data + " ");
-            current = current.next;
-        }
-        System.out.println();
-        current = list2.front;
-        while (current != null) {
-            System.out.print(current.data + " ");
-            current = current.next;
-        }
+        list1.print();
+        list2.print();
     }
 }
