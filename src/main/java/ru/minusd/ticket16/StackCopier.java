@@ -2,12 +2,13 @@ package ru.minusd.ticket16;
 
 
 /*
-    * Написать метод, который принимает на вход два стека и возвращает стек, в котором содержатся элементы из обоих стеков.
-    * В качестве вспомогательной структуры данных можно использовать только одну очередь
+ * Написать метод, который принимает на вход два стека и возвращает стек, в котором содержатся элементы из обоих стеков.
+ * В качестве вспомогательной структуры данных можно использовать только одну очередь
  */
 
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.Queue;
 import java.util.Stack;
 
 public class StackCopier {
@@ -25,6 +26,21 @@ public class StackCopier {
         return result;
     }
 
+    public static Stack<Integer> copyStack2(Stack<Integer> stack) {
+        Stack<Integer> result = new Stack<>();
+        Queue<Integer> queue = new ArrayDeque<>();
+        while (!stack.isEmpty()) queue.add(stack.pop());
+        while (!queue.isEmpty()) stack.push(queue.poll());
+        while (!stack.isEmpty()) queue.add(stack.pop());
+        while (!queue.isEmpty()) {
+            int value = queue.remove();
+            result.push(value);
+            stack.push(value);
+        }
+        return result;
+    }
+
+
     public static void main(String[] args) {
         Stack<Integer> stack = new Stack<>();
         stack.push(1);
@@ -39,6 +55,10 @@ public class StackCopier {
         stack.push(10);
         System.out.println(stack);
         Stack<Integer> copy = copyStack(stack);
+        System.out.println(stack);
+        System.out.println(copy);
+
+        Stack<Integer> copy2 = copyStack2(stack);
         System.out.println(stack);
         System.out.println(copy);
     }
