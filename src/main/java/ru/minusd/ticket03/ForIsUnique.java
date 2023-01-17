@@ -1,8 +1,6 @@
 package ru.minusd.ticket03;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
 
 public class ForIsUnique {
     public static boolean isUnique(Map<String, String> map) {
@@ -16,6 +14,11 @@ public class ForIsUnique {
         return true;
     }
 
+    public static boolean isUnique2(Map<String, String> map) {
+        Set<String> tmp = new HashSet<>(map.values());
+        return (tmp.size() == map.size());
+    }
+
     public static void main(String[] args) {
         Map<String, String> map = new HashMap<>();
         map.put("Marty", "Stepp");
@@ -25,7 +28,9 @@ public class ForIsUnique {
         map.put("Hal", "Perkins");
 
         System.out.println(isUnique(map));
+        System.out.println(isUnique2(map));
         map.put("Kendrick", "Perkins");
         System.out.println(isUnique(map));
+        System.out.println(isUnique2(map));
     }
 }
