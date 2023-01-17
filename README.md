@@ -1,12 +1,12 @@
 ## Java Exam
 
-| [Билет 01](./src/main/java/ru/minusd/ticket01) | [Билет 02](./src/main/java/ru/minusd/ticket02)  | [Билет 03*](./src/main/java/ru/minusd/ticket03) | [Билет 04](./src/main/java/ru/minusd/ticket04)  | [Билет 05*](./src/main/java/ru/minusd/ticket05) |
-|------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
-| [Билет 06](./src/main/java/ru/minusd/ticket06) | [Билет 07](./src/main/java/ru/minusd/ticket07)  | [Билет 08*](./src/main/java/ru/minusd/ticket08) | [Билет 09](./src/main/java/ru/minusd/ticket09)  | [Билет 10*](./src/main/java/ru/minusd/ticket10) |
-| [Билет 11](./src/main/java/ru/minusd/ticket11) | [Билет 12*](./src/main/java/ru/minusd/ticket12) | [Билет 13*](./src/main/java/ru/minusd/ticket13) | [Билет 14](./src/main/java/ru/minusd/ticket14)  | [Билет 15](./src/main/java/ru/minusd/ticket15)  |
-| [Билет 16](./src/main/java/ru/minusd/ticket16) | [Билет 17*](./src/main/java/ru/minusd/ticket17) | [Билет 18](./src/main/java/ru/minusd/ticket18)  | [Билет 19*](./src/main/java/ru/minusd/ticket19) | [Билет 20*](./src/main/java/ru/minusd/ticket20) |
-| [Билет 21](./src/main/java/ru/minusd/ticket21) | [Билет 22](./src/main/java/ru/minusd/ticket22)  | [Билет 23](./src/main/java/ru/minusd/ticket23)  | [Билет 24](./src/main/java/ru/minusd/ticket24)  | [Билет 25](./src/main/java/ru/minusd/ticket25)  |
-| [Билет 26](./src/main/java/ru/minusd/ticket26) | [Билет 27](./src/main/java/ru/minusd/ticket27)  | [Билет 28*](./src/main/java/ru/minusd/ticket28) | [Билет 29](./src/main/java/ru/minusd/ticket29)  | [Билет 30*](./src/main/java/ru/minusd/ticket30) |
+| [Билет 01](./src/main/java/ru/minusd/ticket01) | [Билет 02](./src/main/java/ru/minusd/ticket02)  | [Билет 03](./src/main/java/ru/minusd/ticket03)  | [Билет 04](./src/main/java/ru/minusd/ticket04) | [Билет 05](./src/main/java/ru/minusd/ticket05)  |
+|------------------------------------------------|-------------------------------------------------|-------------------------------------------------|------------------------------------------------|-------------------------------------------------|
+| [Билет 06](./src/main/java/ru/minusd/ticket06) | [Билет 07](./src/main/java/ru/minusd/ticket07)  | [Билет 08*](./src/main/java/ru/minusd/ticket08) | [Билет 09](./src/main/java/ru/minusd/ticket09) | [Билет 10*](./src/main/java/ru/minusd/ticket10) |
+| [Билет 11](./src/main/java/ru/minusd/ticket11) | [Билет 12*](./src/main/java/ru/minusd/ticket12) | [Билет 13*](./src/main/java/ru/minusd/ticket13) | [Билет 14](./src/main/java/ru/minusd/ticket14) | [Билет 15](./src/main/java/ru/minusd/ticket15)  |
+| [Билет 16](./src/main/java/ru/minusd/ticket16) | [Билет 17*](./src/main/java/ru/minusd/ticket17) | [Билет 18](./src/main/java/ru/minusd/ticket18)  | [Билет 19](./src/main/java/ru/minusd/ticket19) | [Билет 20*](./src/main/java/ru/minusd/ticket20) |
+| [Билет 21](./src/main/java/ru/minusd/ticket21) | [Билет 22](./src/main/java/ru/minusd/ticket22)  | [Билет 23](./src/main/java/ru/minusd/ticket23)  | [Билет 24](./src/main/java/ru/minusd/ticket24) | [Билет 25](./src/main/java/ru/minusd/ticket25)  |
+| [Билет 26](./src/main/java/ru/minusd/ticket26) | [Билет 27](./src/main/java/ru/minusd/ticket27)  | [Билет 28*](./src/main/java/ru/minusd/ticket28) | [Билет 29](./src/main/java/ru/minusd/ticket29) | [Билет 30*](./src/main/java/ru/minusd/ticket30) |
 
 * **[Билет 01](./src/main/java/ru/minusd/ticket01/theory.txt)**
     * Парадигма ООП. Основные принципы ООП и их реализация в Java & C++
@@ -27,6 +27,8 @@
       програмирования алгоритмов поиска в массивах и коллекциях.
     * [Задача](./src/main/java/ru/minusd/ticket04/HasOddSet.java) Напишите метод hasOdd, который принимает множество (
       Set) целых чисел и возращает true6 если набор содержит хотя бы одно нечётное число.
+* **[Билет 05](./src/main/java/ru/minusd/ticket05)**
+    * [Задача](./src/main/java/ru/minusd/ticket05/ForRarest.java)
 * **[Билет 06](./src/main/java/ru/minusd/ticket06/theory.txt)**
     * Оператор new. Понятие ссылки и указателя на объект. Реализация в C++ и Java. Время жизни объекта.
     * Оранизация работы с файлами в Java.
