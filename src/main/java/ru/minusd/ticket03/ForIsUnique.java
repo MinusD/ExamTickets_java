@@ -25,7 +25,6 @@ public class ForIsUnique {
         map.put("Hal", "Perkins");
 
         System.out.println(isUnique(map));
-
         map.put("Kendrick", "Perkins");
         System.out.println(isUnique(map));
     }
