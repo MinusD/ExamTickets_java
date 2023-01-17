@@ -33,7 +33,7 @@ public class StackCopier {
         while (!queue.isEmpty()) stack.push(queue.poll());
         while (!stack.isEmpty()) queue.add(stack.pop());
         while (!queue.isEmpty()) {
-            int value = queue.remove();
+            int value = queue.poll();
             result.push(value);
             stack.push(value);
         }
