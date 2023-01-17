@@ -1,19 +1,12 @@
 ## Java Exam
 
-| [Билет 01](./src/main/java/ru/minusd/ticket01)  | [Билет 02](./src/main/java/ru/minusd/ticket02)  | [Билет 03*](./src/main/java/ru/minusd/ticket03) | [Билет 04](./src/main/java/ru/minusd/ticket04)  | [Билет 05*](./src/main/java/ru/minusd/ticket05) |
-|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
-| [Билет 06](./src/main/java/ru/minusd/ticket06)  | [Билет 07](./src/main/java/ru/minusd/ticket07)  | [Билет 08*](./src/main/java/ru/minusd/ticket08) | [Билет 09](./src/main/java/ru/minusd/ticket09)  | [Билет 10*](./src/main/java/ru/minusd/ticket10) |
-| [Билет 11*](./src/main/java/ru/minusd/ticket11) | [Билет 12*](./src/main/java/ru/minusd/ticket12) | [Билет 13*](./src/main/java/ru/minusd/ticket13) | [Билет 14](./src/main/java/ru/minusd/ticket14)  | [Билет 15](./src/main/java/ru/minusd/ticket15)  |
-| [Билет 16](./src/main/java/ru/minusd/ticket16)  | [Билет 17*](./src/main/java/ru/minusd/ticket17) | [Билет 18](./src/main/java/ru/minusd/ticket18)  | [Билет 19*](./src/main/java/ru/minusd/ticket19) | [Билет 20*](./src/main/java/ru/minusd/ticket20) |
-| [Билет 21](./src/main/java/ru/minusd/ticket21)  | [Билет 22](./src/main/java/ru/minusd/ticket22)  | [Билет 23](./src/main/java/ru/minusd/ticket23)  | [Билет 24](./src/main/java/ru/minusd/ticket24)  | [Билет 25](./src/main/java/ru/minusd/ticket25)  |
-| [Билет 26](./src/main/java/ru/minusd/ticket26)  | [Билет 27](./src/main/java/ru/minusd/ticket27)  | [Билет 28*](./src/main/java/ru/minusd/ticket28) | [Билет 29](./src/main/java/ru/minusd/ticket29)  | [Билет 30*](./src/main/java/ru/minusd/ticket30) |
-
-* **[Билет 0x](./src/main/java/ru/minusd/ticket0x)**
-    * ... конструктор родительского класса, порядок инициализации экземпляра Java класса.
-    * Использование языка UML для проектирования и документации объектно-ориентированных программ. Основные UML
-      диаграммы для оборажения отношений между классами в ООП программах.
-    * [Задача](./src/main/java/ru/minusd/ticket0x/LinkedIntList.java) Напишите метод firstLast, который можно добавить в
-      класс LinkedIntList, который перемещает первый элемент спика в конец.
+| [Билет 01](./src/main/java/ru/minusd/ticket01) | [Билет 02](./src/main/java/ru/minusd/ticket02)  | [Билет 03*](./src/main/java/ru/minusd/ticket03) | [Билет 04](./src/main/java/ru/minusd/ticket04)  | [Билет 05*](./src/main/java/ru/minusd/ticket05) |
+|------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
+| [Билет 06](./src/main/java/ru/minusd/ticket06) | [Билет 07](./src/main/java/ru/minusd/ticket07)  | [Билет 08*](./src/main/java/ru/minusd/ticket08) | [Билет 09](./src/main/java/ru/minusd/ticket09)  | [Билет 10*](./src/main/java/ru/minusd/ticket10) |
+| [Билет 11](./src/main/java/ru/minusd/ticket11) | [Билет 12*](./src/main/java/ru/minusd/ticket12) | [Билет 13*](./src/main/java/ru/minusd/ticket13) | [Билет 14](./src/main/java/ru/minusd/ticket14)  | [Билет 15](./src/main/java/ru/minusd/ticket15)  |
+| [Билет 16](./src/main/java/ru/minusd/ticket16) | [Билет 17*](./src/main/java/ru/minusd/ticket17) | [Билет 18](./src/main/java/ru/minusd/ticket18)  | [Билет 19*](./src/main/java/ru/minusd/ticket19) | [Билет 20*](./src/main/java/ru/minusd/ticket20) |
+| [Билет 21](./src/main/java/ru/minusd/ticket21) | [Билет 22](./src/main/java/ru/minusd/ticket22)  | [Билет 23](./src/main/java/ru/minusd/ticket23)  | [Билет 24](./src/main/java/ru/minusd/ticket24)  | [Билет 25](./src/main/java/ru/minusd/ticket25)  |
+| [Билет 26](./src/main/java/ru/minusd/ticket26) | [Билет 27](./src/main/java/ru/minusd/ticket27)  | [Билет 28*](./src/main/java/ru/minusd/ticket28) | [Билет 29](./src/main/java/ru/minusd/ticket29)  | [Билет 30*](./src/main/java/ru/minusd/ticket30) |
 
 * **[Билет 01](./src/main/java/ru/minusd/ticket01/theory.txt)**
     * Парадигма ООП. Основные принципы ООП и их реализация в Java & C++
@@ -53,6 +46,13 @@
     * Обобщённое програмирование. Понятие и использование джеенериков в Java
     * [Задача](./src/main/java/ru/minusd/ticket09/LinkedIntList.java) Напишите метод removeDuplicates, который можно
       доюавить в класс LinkedIntList. Метод должен удалить дубликаты из связного списка целых чисел.
+* **[Билет 11](./src/main/java/ru/minusd/ticket11)**
+    * Конструкторы, назначение и использоваине. Вызов конструктора родительского класса, неявный вызов конструктор
+      родительского класса, порядок инициализации экземпляра Java класса.
+    * Использование языка UML для проектирования и документации объектно-ориентированных программ. Основные UML
+      диаграммы для оборажения отношений между классами в ООП программах.
+    * [Задача](./src/main/java/ru/minusd/ticket11/LinkedIntList.java) Напишите метод firstLast, который можно добавить в
+      класс LinkedIntList, который перемещает первый элемент спика в конец.
 * **[Билет 14](./src/main/java/ru/minusd/ticket14/theory.txt)**
     * Примитивные и ссылочные типы данных. Использование механизмов автоупаковки и автораспаковки. Операция приведения
       типов. Понижающее и привышающее приведение.

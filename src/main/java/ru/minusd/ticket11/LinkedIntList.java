@@ -1,4 +1,4 @@
-package ru.minusd.ticket0x;
+package ru.minusd.ticket11;
 
 /*
  * Реализуйте класс LinkedIntList, который представляет собой односвязный список целых чисел.
