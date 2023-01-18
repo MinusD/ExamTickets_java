@@ -7,6 +7,7 @@ package ru.minusd.ticket15;
  */
 
 import java.util.ArrayDeque;
+import java.util.Queue;
 import java.util.Stack;
 
 public class SplitStack {
@@ -22,6 +23,22 @@ public class SplitStack {
         }
         while (!queue.isEmpty()) {
             stack.push(queue.pop());
+        }
+    }
+
+    public static void splitStack2(Stack<Integer> stack) {
+        Queue<Integer> queue = new ArrayDeque<>();
+        int size = stack.size();
+        while (!stack.isEmpty()) queue.add(stack.pop());
+        for (int i = 0; i < size; i++) {
+            if (queue.peek() < 0) {
+                stack.push(queue.poll());
+            } else {
+                queue.add(queue.poll());
+            }
+        }
+        while (!queue.isEmpty()) {
+            stack.push(queue.poll());
         }
     }
 
